@@ -1,0 +1,43 @@
+#RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#RewriteRule ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/?$ index.php?rt=$1&id=$2&nombre=$3 [L,QSA]
+
+#Rewriterule ^(.*)/(.*)/?$ index.php?rt=$1&id=$2 [L]
+Options -Indexes
+ErrorDocument 403 403.php
+ErrorDocument 404 404.php
+
+Options -Multiviews
+RewriteEngine On
+#RewriteBase /
+#AllowEncodedSlashes On
+RewriteRule ^site_farmacologia/(.*)$ - [L]
+#RewriteRule ^configs/(.*)$ - [L]
+RewriteRule ^includes/(.*)$ - [L]
+RewriteRule ^data/(.*)$ - [L]
+RewriteRule ^model/(.*)$ - [L]
+RewriteRule ^views/(.*)$ - [L]
+RewriteRule ^controllers/(.*)$ - [L]
+RewriteRule ^lib/(.*)$ - [L]
+RewriteRule ^data/(.*)$ - [L]
+RewriteRule ^font/(.*)$ - [L]
+RewriteRule ^fonts/(.*)$ - [L]
+RewriteRule ^media/(.*)$ - [L]
+RewriteRule ^css/(.*)$ - [L]
+RewriteRule ^js/(.*)$ - [L]
+RewriteRule ^img/(.*)$ - [L]
+RewriteRule ^images/(.*)$ - [L]
+RewriteRule ^demo/(.*)$ - [L]
+RewriteRule ^fonsts/(.*)$ - [L]
+RewriteRule ^sounds/(.*)$ - [L]
+RewriteRule ^assets/(.*)$ - [L]
+RewriteRule ^postales/(.*)$ - [L]
+RewriteRule ^.well-known/(.*)$ - [L]
+RewriteRule ^([0-9a-z_-]+)/?$ index.php?rt=$1 [L,QSA]
+RewriteRule ^([0-9a-z_-]+)/([^/]+)/?$ index.php?rt=$1&id=$2 [L,QSA]
+RewriteRule ^([0-9a-z_-]+)/([^/]+)/([^/]+)/?$ index.php?rt=$1&id=$2&nombre=$3 [L,QSA]
+RewriteRule ^([0-9a-z_-]+)/([^/]+)/([^/]+)/([^/]+)/?$ index.php?rt=$1&id=$2&nombre=$3&comment=$4 [L,QSA]
+
