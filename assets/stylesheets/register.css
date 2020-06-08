@@ -1,0 +1,59 @@
+.txt_small{ font-size:10px;}
+#div_office_information{ display:none;}
+/*.message{color:#F00; width:18px; height:16px; color:#900; font-size:12px; z-index:1; position:absolute; margin-left:40px; margin-top:-30px;}*/
+.message{ display:none;}
+#email_messageInfo{color:#F00; font-size:22px;  color:#900; font-size:12px;}
+#cellPhone_messageInfo{color:#F00; font-size:22px;  color:#900; font-size:12px;}
+.textError{color:#F00; font-size:12px;}
+#passError{ color:#F00; font-size:12px;}
+#error_msg{ display:none;}
+.error_msg{ display:none;}
+/*#center_box_save{width:500px; margin:0 auto 0 auto; margin-bottom:100px;}*/
+#center_box_save{}
+#div_term{max-width:320px;}
+.error1{color:#F00;  z-index:1; position:absolute; margin-left:30px; font-size:13px;}
+
+.message1{width:130px; z-index:1; position:absolute; margin-left:13px; color:#900; font-size:12px;}
+#office_address{ display:none;}
+.space_between_fields{height:25px;}
+
+/*star upload */
+ #img_banner_bg{ 
+	
+	z-index:2;
+	position:absolute; text-align:center;
+	display: inline-block;	
+	width:100%;
+}
+
+.image-upload > input {
+  visibility:hidden;
+  width:0;
+  height:0;
+
+}
+.txr_upload{ color:#FFF; font-size:16px; font-weight:bold;}
+#div_banner_loading{ display:none;}
+/*img profile*/
+#div_profile_loading{ display:none;}
+#img_profile_bg{
+	z-index:2;
+	position:absolute; text-align:center;
+	display: inline-block;	
+	width:200px;	
+}
+#img_pet_bg{
+	z-index:2;
+	position:absolute; text-align:center;
+	display: inline-block;	
+	width:200px;
+	margin-left:-100px;
+}
+.txr_profile_upload{ color:#FFF; font-size:16px; font-weight:bold; text-align:center; background-color:#000;}
+
+/*end upload*/
+.txt_validation{width:190px; z-index:1; position:absolute; margin-left:30px; font-size:13px; color:#009933;}
+.url_public{ font-size:10px;}
+/*my public profile*/
+.name_title_doctor{ font-size:16px;}
+.info_title_doctor{ font-size:13px;}
